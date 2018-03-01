@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="first">
+      <table class="table table-bordered table-hover ">
+          <tr>
+            <th *ngFor="let key of arrayOFKeys">{{key}}</th>
+            <th>Action</th>
+          </tr>
+          <tr *ngFor="let nextItem of newArray; let  i = index;" >
+            <td *ngFor="let key of arrayOFKeys; let j = index" (dblclick)="onDoubleClick(i,j,nextItem[key])" >
+              <span  *ngIf="celli !== i || cellj !== j" >
+                {{nextItem[key]}}
+            </span> 
+              <span *ngIf="celli == i && cellj == j"><input type="text"  [(ngModel)]="nextItem[arrayOFKeys[j]]" (blur)="onblur()">
+              </span></td>
+            <td><button type="button" (click)="onDeleteClick(i)">delete</button>
+             
+          </tr>
+    
+        </table>
+  </div>
+   
+</div>

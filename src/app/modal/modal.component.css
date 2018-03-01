@@ -1,0 +1,52 @@
+.div1
+{
+ width:600px;
+ height:auto;
+ border:1px solid black;
+ border-radius:10px; 
+ margin-top:2%;
+ margin-left:30%;
+ position:fixed;
+ background-color:#bcc4c7;;
+}
+#button1
+{
+ width:100px;
+ height:30px;
+ border:1px solid rgb(129, 126, 121);
+ border-radius:10px;  
+ float: left;
+ background-color:#bcc4c7;;
+ position: static;
+
+}
+#button2
+{
+ width:100px;
+ height:30px;
+ border:1px solid rgb(129, 126, 121);
+ border-radius:10px;  
+ float: right;
+ background-color: #bcc4c7;
+ position:static;
+}
+h1{
+    margin-left:100px;
+}
+.first
+{
+margin-left:200px;
+background-color: #bcc4c7;;
+
+ width:600px;
+ height:300px;
+ margin-left:200px;
+ margin-top:50px;
+ border:1px solid #bcc4c7;
+ background-color:white;
+
+}
+.form-control
+{
+    margin-top: 22px;
+}

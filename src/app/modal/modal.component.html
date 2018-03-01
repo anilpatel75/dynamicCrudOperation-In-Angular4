@@ -1,0 +1,16 @@
+    <div class="div1 ">
+    <div class="container">
+        <h1>{{msg}}</h1>
+  
+      <div  *ngFor="let form1 of forms; let i = index;">
+        <span><h5>{{form1}}:</h5></span>
+        <input type="text"  class="form-control" [(ngModel)] ="data[i]">
+       </div>
+   </div>
+  
+  <button type="button"  id="button1" 
+    value="cancle" (click)="onCancel()">Cancle</button>
+
+  <button type="button"  id="button2" 
+  (click) ="addNEwEntry(btn1)">{{btn1}}</button>
+ </div>
